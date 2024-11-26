@@ -7,9 +7,113 @@
     <title>Спортивная секция Сонар</title>
 </head>
 <body>
-    Главная страница
-    <script>
-        alert("Hello, world!")
-    </script>
+    <!-- надо вставить логотип, при нажатии будет переходить на главную страницу -->
+    Главная страница 
 </body>
+<header>
+    <a>Секция Сонар </a>
+    <nav>
+        <ul>
+            <!-- вкладки перехода по сайту -->
+            <li><a href="#">Главная</a></li> 
+            <li><a href="#">Католог</a></li>
+            <li><a href="#">О сервисе</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        <span>8-999-999-99-99</span>
+    </nav>
+</header>
+<main>
+    <section>
+        <!-- картина на всю ширину сайта, по нажатии на кнопку можно попробовать пробное занятие -->
+        <div><h2>Секция Сонар</h2>
+        <p>Текст</p>
+        <button type="button">переход по ссылке</button>
+    </div>
+    <img src="image/181921-yabloko-kartinka-dlya-detey-33.jpg" alt="Изображение яблоко">
+</section>
+<section>
+    <div>
+        <!-- вместо книг надо рассказать чем полезна секция и спорт -->
+        <h2>Чем полезна секция?</h2>
+        <ul>
+            <li>
+                <img src="image/765363_1200x99999x90.webp" alt="картина яблок" width="300" height="300">
+                <h3>
+                    <!-- подзаголовок -->
+                </h3>
+                <p>
+                    <!-- основной текст -->
+                </p>
+            </li>
+            <li>
+                <img src="image/istockphoto-1093596430-612x612.jpg" alt="изображение лука" width="300" height="300">
+                <h3>
+                    <!-- подзаголовок -->
+                </h3>
+                <p>
+                    <!-- основной текст -->
+                </p>
+            </li>
+            <li>
+                <img src="image/бегущий человек.jpg">
+                <h3>
+                    <!-- подзогаловок -->
+                </h3>
+                <p>
+                    <!-- основной текст -->
+                </p>
+            </li>
+        </ul>
+        </div>
+        <section>
+            <div>
+                <!-- написать какой инвентарь используем и какое натяжение у луков -->
+                <h2> католог книг</h2>
+                <ul>
+                    <li><button type="button">все</button></li>
+                    <li><button type="button">психология</button></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <h3>НИСЫ</h3>
+                        <p>текст о книге</p>
+                        <span>ЦЕНА</span>
+                    </li>
+                    <li>
+                        <h3>книга 2</h3>
+                        <p>текст о книге</p>
+                        <span>ЦЕНА</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+</section>
+</main>
+<!-- подвал, здесь пользователь может задать вопрос и отправить его -->
+<footer>
+    <section>
+        <h2>Есть вопросы? Задавайте!</h2>
+        <form action="/" method="post">
+            <label for="username">Имя пользователя:</label>
+            <input type="text" placeholder="Введите Имя пользователя">
+
+            <input type="tel" id="tel" name="tel"
+            placeholder="Введите номер телефона">
+
+            <input type="email" id="email" name="email"
+            placeholder="Введите ваш email">
+
+            <textarea id="message" name="message" rows="5" cols="30"
+            placeholder="Введите ваше сообщение"></textarea>
+
+            <input type="submit" value="Отправить">
+        </form>
+    </section>
+    
+    <a>Секция Сонар</a>
+</footer>
+
 </html>
