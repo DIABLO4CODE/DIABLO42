@@ -7,23 +7,49 @@
     <title>Спортивная секция Сонар</title>
 </head>
 <body>
+    <header class="header">
     <!-- надо вставить логотип, при нажатии будет переходить на главную страницу -->
     Главная страница 
-</body>
-<header>
-    <a>Секция Сонар </a>
-    <nav>
-        <ul>
+
+    <h1 class="header_title">Секция Сонар </h1>
+    <nav class="header_menu">
+        <ul class="menu">
             <!-- вкладки перехода по сайту -->
-            <li><a href="#">Главная</a></li> 
-            <li><a href="#">Католог</a></li>
-            <li><a href="#">О сервисе</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li class="menu_item menu_item--active">
+                <a class="menu_link" href="index.html">Главная</a>
+            </li> 
+            <li class="menu_item">
+                <a class="menu_item" href="#">Католог</a>
+            </li>
+            <li class="menu_item">
+                <a class="menu_link" href="#">Преподователи</a>
+            </li>
+            <li class="menu_item">
+                <a class="menu_link" href="#">Контакты</a>
+            </li>
         </ul>
         <span>8-999-999-99-99</span>
     </nav>
 </header>
 <main>
+    <div class="teachers">
+        <h2 class="teachers_title">текст </h2>
+        <div class="teachers_card">
+            <img src="image/images (1).png" alt="фото преподователя" width="150" height="150">
+            <p>Иван Иванович</p>
+            <p>должность</p>
+        </div>
+        <div class="teachers_card">
+            <img src="image/images (1).png" alt="фото преподователя" width="150" height="150">
+            <p>максим викторович</p>
+            <p>должность</p>
+        </div>
+        <div class="teachers_card">
+            <img src="image/images (1).png" alt="фото преподователя" width="150" height="150">
+            <p>галина сергеевна</p>
+            <p>должность</p>
+        </div>
+    </div>
     <section>
         <!-- картина на всю ширину сайта, по нажатии на кнопку можно попробовать пробное занятие -->
         <div><h2>Секция Сонар</h2>
@@ -115,5 +141,5 @@
     
     <a>Секция Сонар</a>
 </footer>
-
+</body>
 </html>
