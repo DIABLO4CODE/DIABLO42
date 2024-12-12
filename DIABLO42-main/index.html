@@ -5,25 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Спортивная секция Сонар</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    Главная страница
-</body>
-<header>
-    <a>Секция Сонар </a>
-    <nav>
-        <ul>
-            <li><a href="#">Главная</a></li> 
-            <li><a href="#">Католог</a></li>
-            <li><a href="#">О сервисе</a></li>
-            <li><a href="#">Контакты</a></li>
+    <header class="header">
+        <div class="header">
+            <li class="menu_item--active">
+                <a class="menu_link" href="index.html"><img src="image/лук лого.jpg" width="90" height="90"></a>
+            </li>
+        </div>
+    <!-- надо вставить логотип, при нажатии будет переходить на главную страницу -->
+    Главная страница 
+
+    <h1 class="header_title">Секция Сонар </h1>
+    <nav class="header_menu">
+        <ul class="menu">
+            <!-- вкладки перехода по сайту -->
+            <li class="menu_item menu_item--active">
+                <a class="menu_link" href="index.html">Главная</a>
+            </li> 
+            <li class="menu_item">
+                <a class="menu_link" href="#">Расписание</a> 
+            </li>
+            <li class="menu_item">
+                <a class="menu_link" href="#">О нас</a>
+            </li>
+            <li class="menu_item">
+                <a class="menu_link" href="#">Преподователи</a>
+            </li>
+            <li class="menu_item">
+                <a class="menu_link" href="#">Личный кабинет</a>
+            </li>
+            <li class="menu_item">
+                <a class="menu_link" href="#">Пробное занятие</a>
+            </li>
         </ul>
         <span>8-999-999-99-99</span>
     </nav>
 </header>
 <main>
+    <div class="teachers">
+        <h2 class="teachers_title">текст </h2>
+        <div class="teachers_card">
+            <img src="image/images (1).png" alt="фото преподователя" width="150" height="150">
+            <p>Иван Иванович</p>
+            <p>должность</p>
+        </div>
+        <div class="teachers_card">
+            <img src="image/images (1).png" alt="фото преподователя" width="150" height="150">
+            <p>максим викторович</p>
+            <p>должность</p>
+        </div>
+        <div class="teachers_card">
+            <img src="image/images (1).png" alt="фото преподователя" width="150" height="150">
+            <p>галина сергеевна</p>
+            <p>должность</p>
+        </div>
+    </div>
     <section>
-        <div><h2>Заголовок</h2>
+        <!-- картина на всю ширину сайта, по нажатии на кнопку можно попробовать пробное занятие -->
+        <div><h2>Секция Сонар</h2>
         <p>Текст</p>
         <button type="button">переход по ссылке</button>
     </div>
@@ -31,18 +73,40 @@
 </section>
 <section>
     <div>
-        <h2>почему выбирают наши книги?</h2>
+        <h2>Чем полезна секция?</h2>
         <ul>
             <li>
-                <img src="image/765363_1200x99999x90.webp" alt="картина яблок" width="300" height="300">
+                <img src="image/прицл.webp" alt="Концентрация" width="300" height="300">
+                <h3>
+                    Концентрация и ментальное благополучие.
+                </h3>
+                <p>
+                    Чтобы достичь точности при стрельбе из лука, необходимо обладать хорошей концентрацией и ментальным спокойствием.
+                </p>
             </li>
             <li>
                 <img src="image/istockphoto-1093596430-612x612.jpg" alt="изображение лука" width="300" height="300">
+                <h3>
+                    благотворно влияет на состояние здоровья 
+                </h3>
+                <p>
+                    стрельба из лука благотворно влияет на осанку и улучшает зрение
+                </p>
+            </li>
+            <li>
+                <img src="image/бегущий человек.jpg">
+                <h3>
+                    Повышение работоспособности.
+                </h3>
+                <p>
+                    После тренировок повышается работоспособность, организм дополнительно вырабатывает гормоны эндорфины, серотонин и дофамин, которые повышают настроение и мотивированность.
+                </p>
             </li>
         </ul>
         </div>
         <section>
             <div>
+                <!-- написать какой инвентарь используем и какое натяжение у луков -->
                 <h2> католог книг</h2>
                 <ul>
                     <li><button type="button">все</button></li>
@@ -66,12 +130,28 @@
         </section>
 </section>
 </main>
-
+<!-- подвал, здесь пользователь может задать вопрос и отправить его -->
 <footer>
-    <form action="/" method="post">
-        <input type="email" placeholder="Введите e-mail">
-    </form>
+    <section>
+        <h2>Есть вопросы? Задавайте!</h2>
+        <form action="/" method="post">
+            <label for="username">Имя пользователя:</label>
+            <input type="text" placeholder="Введите Имя пользователя">
+
+            <input type="tel" id="tel" name="tel"
+            placeholder="Введите номер телефона">
+
+            <input type="email" id="email" name="email"
+            placeholder="Введите ваш email">
+
+            <textarea id="message" name="message" rows="5" cols="30"
+            placeholder="Введите ваше сообщение"></textarea>
+
+            <input type="submit" value="Отправить">
+        </form>
+    </section>
+    
     <a>Секция Сонар</a>
 </footer>
-
+</body>
 </html>
