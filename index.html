@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,150 +9,140 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <header class="header">
-        <div class="header">
-            <li class="menu_item--active">
-                <a class="menu_link" href="index.html"><img src="image/лук лого.jpg" width="90" height="90"></a>
-            </li>
-        </div>
-    <!-- надо вставить логотип, при нажатии будет переходить на главную страницу -->
-    Главная страница 
-
-    <h1 class="header_title">Секция Сонар </h1>
-    <nav class="header_menu">
-        <ul class="menu">
-            <!-- вкладки перехода по сайту -->
-            <li class="menu_item menu_item--active">
-                <a class="menu_link" href="index.html">Главная</a>
-            </li> 
-            <li class="menu_item">
-                <a class="menu_link" href="#">Расписание</a> 
-            </li>
-            <li class="menu_item">
-                <a class="menu_link" href="#">О нас</a>
-            </li>
-            <li class="menu_item">
-                <a class="menu_link" href="#">Преподователи</a>
-            </li>
-            <li class="menu_item">
-                <a class="menu_link" href="#">Личный кабинет</a>
-            </li>
-            <li class="menu_item">
-                <a class="menu_link" href="#">Пробное занятие</a>
-            </li>
-        </ul>
-        <span>8-999-999-99-99</span>
-    </nav>
-</header>
-<main>
-    <div class="teachers">
-        <h2 class="teachers_title">текст </h2>
-        <div class="teachers_card">
-            <img src="image/images (1).png" alt="фото преподователя" width="150" height="150">
-            <p>Иван Иванович</p>
-            <p>должность</p>
-        </div>
-        <div class="teachers_card">
-            <img src="image/images (1).png" alt="фото преподователя" width="150" height="150">
-            <p>максим викторович</p>
-            <p>должность</p>
-        </div>
-        <div class="teachers_card">
-            <img src="image/images (1).png" alt="фото преподователя" width="150" height="150">
-            <p>галина сергеевна</p>
-            <p>должность</p>
-        </div>
-    </div>
-    <section>
-        <!-- картина на всю ширину сайта, по нажатии на кнопку можно попробовать пробное занятие -->
-        <div><h2>Секция Сонар</h2>
-        <p>Текст</p>
-        <button type="button">переход по ссылке</button>
-    </div>
-    <img src="image/181921-yabloko-kartinka-dlya-detey-33.jpg" alt="Изображение яблоко">
-</section>
-<section>
-    <div>
-        <h2>Чем полезна секция?</h2>
-        <ul>
-            <li>
-                <img src="image/прицл.webp" alt="Концентрация" width="300" height="300">
-                <h3>
-                    Концентрация и ментальное благополучие.
-                </h3>
-                <p>
-                    Чтобы достичь точности при стрельбе из лука, необходимо обладать хорошей концентрацией и ментальным спокойствием.
-                </p>
-            </li>
-            <li>
-                <img src="image/istockphoto-1093596430-612x612.jpg" alt="изображение лука" width="300" height="300">
-                <h3>
-                    благотворно влияет на состояние здоровья 
-                </h3>
-                <p>
-                    стрельба из лука благотворно влияет на осанку и улучшает зрение
-                </p>
-            </li>
-            <li>
-                <img src="image/бегущий человек.jpg">
-                <h3>
-                    Повышение работоспособности.
-                </h3>
-                <p>
-                    После тренировок повышается работоспособность, организм дополнительно вырабатывает гормоны эндорфины, серотонин и дофамин, которые повышают настроение и мотивированность.
-                </p>
-            </li>
-        </ul>
-        </div>
-        <section>
-            <div>
-                <!-- написать какой инвентарь используем и какое натяжение у луков -->
-                <h2> католог книг</h2>
-                <ul>
-                    <li><button type="button">все</button></li>
-                    <li><button type="button">психология</button></li>
-                </ul>
+        <a class="header_link" href="index.html"><img class="header__logo" src="image/лук лого.jpg" alt="логотип"
+                width="90" height="90"></a>
+        <!-- надо вставить логотип, при нажатии будет переходить на главную страницу -->
+        <h1 class="header_title">Секция Сонар </h1>
+        <nav class="header_menu">
+            <ul class="menu">
+                <!-- вкладки перехода по сайту -->
+                <li class="menu_item menu_item--active">
+                    <a class="menu_link" href="index.html">Главная</a>
+                </li>
+                <li class="menu_item">
+                    <a class="menu_link" href="#">Расписание</a>
+                </li>
+                <li class="menu_item">
+                    <a class="menu_link" href="#">О нас</a>
+                </li>
+                <li class="menu_item">
+                    <a class="menu_link" href="#">Преподователи</a>
+                </li>
+                <li class="menu_item">
+                    <a class="menu_link" href="#">Личный кабинет</a>
+                </li>
+                <li class="menu_item">
+                    <a class="menu_link" href="#">Пробное занятие</a>
+                </li>
+            </ul>
+            <span class="header__tel">8-999-999-99-99</span>
+        </nav>
+    </header>
+    <main>
+        <section class="teachers">
+            <h2 class="teachers_title">текст </h2>
+            <div class="teachers_card">
+                <img class="teachers__img" src="image/images (1).png" alt="фото преподователя" width="150" height="150">
+                <p class="teachers__name">Иван Иванович</p>
+                <p class="teachers__job">должность</p>
             </div>
-            <div>
-                <ul>
-                    <li>
-                        <h3>НИСЫ</h3>
-                        <p>текст о книге</p>
-                        <span>ЦЕНА</span>
-                    </li>
-                    <li>
-                        <h3>книга 2</h3>
-                        <p>текст о книге</p>
-                        <span>ЦЕНА</span>
-                    </li>
-                </ul>
+            <div class="teachers_card">
+                <img class="teachers__img" src="image/images (1).png" alt="фото преподователя" width="150" height="150">
+                <p class="teachers__name">максим викторович</p>
+                <p class="teachers__job">должность</p>
+            </div>
+            <div class="teachers__card">
+                <img class="teachers__img" src="image/images (1).png" alt="фото преподователя" width="150" height="150">
+                <p class="teachers__name">галина сергеевна</p>
+                <p class="teachers__job">должность</p>
             </div>
         </section>
-</section>
-</main>
-<!-- подвал, здесь пользователь может задать вопрос и отправить его -->
-<footer>
-    <section>
-        <h2>Есть вопросы? Задавайте!</h2>
-        <form action="/" method="post">
-            <label for="username">Имя пользователя:</label>
-            <input type="text" placeholder="Введите Имя пользователя">
+        <section class="trial">
+            <!-- картина на всю ширину сайта, по нажатии на кнопку можно попробовать пробное занятие -->
+            <div class="trial__info">
+                <img class="trial__img" src="image/targets.jpg" alt="фото мишени" width="1000" height="200">
+                <h2 class="trial__title">Секция Сонар</h2>
+                <p class="trial__text">Текст про спорт</p>
+                <button class="trial__button" type="button">переход по ссылке</button>
+            </div>
+        </section>
+        <section class="facts">
+            <div class="facts__info">
+                <h2 class="facts__title">Чем полезна секция?</h2>
+                <ul class="facts__list">
+                    <li class="facts__item">
+                        <img class="facts__img" src="image/прицл.webp" alt="Концентрация" width="300" height="300">
+                        <h3 class="facts__heading">
+                            Концентрация и ментальное благополучие.
+                        </h3>
+                        <p class="facts__text">
+                            Чтобы достичь точности при стрельбе из лука, необходимо обладать хорошей концентрацией и
+                            ментальным спокойствием.
+                        </p>
+                    </li>
+                    <li class="facts__item">
+                        <img class="facts__img" src="image/istockphoto-1093596430-612x612.jpg" alt="изображение лука"
+                            width="300" height="300">
+                        <h3 class="facts__heading">
+                            благотворно влияет на состояние здоровья
+                        </h3>
+                        <p class="facts__text">
+                            стрельба из лука благотворно влияет на осанку и улучшает зрение
+                        </p>
+                    </li>
+                    <li class="facts__item">
+                        <img class="facts__img" src="image/бегущий человек.jpg" alt="бегущий человек" > 
+                        <h3 class="facts__heading">
+                            Повышение работоспособности.
+                        </h3>
+                        <p class="facts__text">
+                            После тренировок повышается работоспособность, организм дополнительно вырабатывает гормоны
+                            эндорфины, серотонин и дофамин, которые повышают настроение и мотивированность.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <section class="inventory">
+                    <!-- написать какой инвентарь используем и какое натяжение у луков -->
+                    <h2 class="inventory__title">Инвентарь</h2>
+                <div class="inventory__info">
+                    <ul class="inventory__list">
+                        <li class="inventory__item">
+                            <img class="inventory__img" src="image/лук в разборе.webp" alt="лук в разборе" width="300" height="300">
+                            <p class="inventory__text">текст о луке</p>
+                        </li>
+                        <li class="inventory__item">
+                            <img class="inventory__img" src="image/стрела в разборе.jpg" alt="стрела в разборе" width="300" height="300">
+                            <p class="inventory__text">текст о стреле</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </main>
+    <!-- подвал, здесь пользователь может задать вопрос и отправить его -->
+    <footer class="footer">
+        <section class="footer__info">
+            <h2 class="footer__question">Есть вопросы? Задавайте!</h2>
+            <form action="/" method="post">
+                <input type="text" placeholder="Введите Имя пользователя">
 
-            <input type="tel" id="tel" name="tel"
-            placeholder="Введите номер телефона">
+                <input type="tel" id="tel" name="tel" placeholder="Введите номер телефона">
 
-            <input type="email" id="email" name="email"
-            placeholder="Введите ваш email">
+                <input type="email" id="email" name="email" placeholder="Введите ваш email">
 
-            <textarea id="message" name="message" rows="5" cols="30"
-            placeholder="Введите ваше сообщение"></textarea>
+                <textarea id="message" name="message" rows="5" cols="30"
+                    placeholder="Введите ваше сообщение"></textarea>
 
-            <input type="submit" value="Отправить">
-        </form>
-    </section>
-    
-    <a>Секция Сонар</a>
-</footer>
+                <input type="submit" value="Отправить">
+            </form>
+        </section>
+
+        <a>Секция Сонар</a>
+    </footer>
 </body>
+
 </html>
