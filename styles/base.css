@@ -82,3 +82,8 @@ overflow: hidden;
     border: 1px solid rgba(145, 150, 161, 0.4);
     border-radius: 16px;
 }
+.container{
+    width:1440px;
+    margin-left: auto;
+    margin-right: auto; 
+}

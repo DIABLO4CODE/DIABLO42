@@ -11,11 +11,11 @@
 </head>
 
 <body>
-    <header class="header">
-        <a class="header_link" href="index.html"><img class="header__logo" src="image/лук лого.jpg" alt="логотип"
-                width="90" height="90"></a>
-        <!-- надо вставить логотип, при нажатии будет переходить на главную страницу -->
+    <header class="header container"> 
+        <a class="header__logo-wrap" href="index.html"><img class="header__logo" src="image/лук лого.jpg" alt="logotip"
+                width="90" height="90">
         <h1 class="header_title">Секция Сонар </h1>
+        </a>
         <nav class="header_menu">
             <ul class="menu">
                 <!-- вкладки перехода по сайту -->
@@ -38,24 +38,27 @@
                     <a class="menu_link" href="#">Пробное занятие</a>
                 </li>
             </ul>
-            <span class="header__tel">8-999-999-99-99</span>
         </nav>
+        <div class="header__buttons">
+            <a class="header__button" href="#">Вход</a>
+            <a class="header__button" href="#">Регистрация</a>
+            </div>
     </header>
     <main>
-        <section class="teachers">
+        <section class="teachers container">
             <h2 class="teachers_title">текст </h2>
             <div class="teachers_card">
-                <img class="teachers__img" src="image/images (1).png" alt="фото преподователя" width="150" height="150">
+                <img class="teachers__img" src="image/images (1).png" alt="photo teacher" width="150" height="150">
                 <p class="teachers__name">Иван Иванович</p>
                 <p class="teachers__job">должность</p>
             </div>
             <div class="teachers_card">
-                <img class="teachers__img" src="image/images (1).png" alt="фото преподователя" width="150" height="150">
+                <img class="teachers__img" src="image/images (1).png" alt="photo teacher" width="150" height="150">
                 <p class="teachers__name">максим викторович</p>
                 <p class="teachers__job">должность</p>
             </div>
             <div class="teachers__card">
-                <img class="teachers__img" src="image/images (1).png" alt="фото преподователя" width="150" height="150">
+                <img class="teachers__img" src="image/images (1).png" alt="photo teacher" width="150" height="150">
                 <p class="teachers__name">галина сергеевна</p>
                 <p class="teachers__job">должность</p>
             </div>
@@ -74,7 +77,7 @@
                 <h2 class="facts__title">Чем полезна секция?</h2>
                 <ul class="facts__list">
                     <li class="facts__item">
-                        <img class="facts__img" src="image/прицл.webp" alt="Концентрация" width="300" height="300">
+                        <img class="facts__img" src="image/прицл.webp" alt="concentration" width="300" height="300">
                         <h3 class="facts__heading">
                             Концентрация и ментальное благополучие.
                         </h3>
@@ -84,7 +87,7 @@
                         </p>
                     </li>
                     <li class="facts__item">
-                        <img class="facts__img" src="image/istockphoto-1093596430-612x612.jpg" alt="изображение лука"
+                        <img class="facts__img" src="image/istockphoto-1093596430-612x612.jpg" alt="bow picture"
                             width="300" height="300">
                         <h3 class="facts__heading">
                             благотворно влияет на состояние здоровья
@@ -94,7 +97,7 @@
                         </p>
                     </li>
                     <li class="facts__item">
-                        <img class="facts__img" src="image/бегущий человек.jpg" alt="бегущий человек" > 
+                        <img class="facts__img" src="image/бегущий человек.jpg" alt="running man" > 
                         <h3 class="facts__heading">
                             Повышение работоспособности.
                         </h3>
@@ -111,11 +114,11 @@
                 <div class="inventory__info">
                     <ul class="inventory__list">
                         <li class="inventory__item">
-                            <img class="inventory__img" src="image/лук в разборе.webp" alt="лук в разборе" width="300" height="300">
+                            <img class="inventory__img" src="image/лук в разборе.webp" alt="bow" width="300" height="300">
                             <p class="inventory__text">текст о луке</p>
                         </li>
                         <li class="inventory__item">
-                            <img class="inventory__img" src="image/стрела в разборе.jpg" alt="стрела в разборе" width="300" height="300">
+                            <img class="inventory__img" src="image/стрела в разборе.jpg" alt="arrow" width="300" height="300">
                             <p class="inventory__text">текст о стреле</p>
                         </li>
                     </ul>
@@ -124,7 +127,7 @@
         </section>
     </main>
     <!-- подвал, здесь пользователь может задать вопрос и отправить его -->
-    <footer class="footer">
+    <footer class="footer container">
         <section class="footer__info">
             <h2 class="footer__question">Есть вопросы? Задавайте!</h2>
             <form action="/" method="post">
