@@ -1,0 +1,59 @@
+.about{
+    display: flex;
+    gap: 10px;
+}
+.about_warp-right{
+    width: 500px;
+    flex-shrink: 0;
+}
+.about{
+    background-color: rgb(255, 165, 47);
+    color: rgb(255,255,255);
+    padding: 10px;
+}
+.about_button{
+    display: block;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(253, 232, 162);
+    text-decoration: none;
+    margin-top: auto;
+    margin-right: auto;
+   }
+   .about_wrap-left{
+    display: flex;
+    flex-direction: column;
+   }
+   .teachers_card{
+    width: 350px;
+    padding: 15px;
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 1px 2px 20px 5px #d7d7d7;
+   }
+   .teachers__name{
+    margin-top: 15px;
+ margin-bottom: 15px;
+ font-size: 20px;
+ font-weight: bold;
+ text-align: center;
+   }
+   .teachers__job{
+    margin-top: 0;
+ margin-bottom: 15px;
+ font-size: 14px;
+ font-style: italic;
+   }
+   .teachers_wrapper{
+    margin: 0;
+ padding: 20px 0;
+ display: flex;
+ gap: 20px;
+ flex-wrap: wrap;
+ list-style-type: none;
+   }
+   .teachers__img{
+    width: 100%;
+ height: 300px;
+ object-fit: cover;
+   }
