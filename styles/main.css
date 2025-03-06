@@ -1,59 +1,131 @@
-.about{
-    display: flex;
-    gap: 10px;
+.about {
+  display: flex;
+  gap: 10px;
 }
-.about_warp-right{
-    width: 500px;
-    flex-shrink: 0;
+
+.about_warp-right {
+  width: 500px;
+  flex-shrink: 0;
 }
-.about{
-    background-color: rgb(255, 165, 47);
-    color: rgb(255,255,255);
-    padding: 10px;
+
+.about {
+  background-color: rgb(255, 165, 47);
+  color: rgb(255, 255, 255);
+  padding: 10px;
 }
-.about_button{
-    display: block;
-    padding: 10px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(253, 232, 162);
-    text-decoration: none;
-    margin-top: auto;
-    margin-right: auto;
-   }
-   .about_wrap-left{
-    display: flex;
-    flex-direction: column;
-   }
-   .teachers_card{
-    width: 350px;
-    padding: 15px;
-    background-color: aliceblue;
-    color: black;
-    box-shadow: 1px 2px 20px 5px #d7d7d7;
-   }
-   .teachers__name{
-    margin-top: 15px;
- margin-bottom: 15px;
- font-size: 20px;
- font-weight: bold;
- text-align: center;
-   }
-   .teachers__job{
-    margin-top: 0;
- margin-bottom: 15px;
- font-size: 14px;
- font-style: italic;
-   }
-   .teachers_wrapper{
-    margin: 0;
- padding: 20px 0;
- display: flex;
- gap: 20px;
- flex-wrap: wrap;
- list-style-type: none;
-   }
-   .teachers__img{
-    width: 100%;
- height: 300px;
- object-fit: cover;
-   }
+
+.about_button {
+  display: block;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(253, 232, 162);
+  text-decoration: none;
+  margin-top: auto;
+  margin-right: auto;
+}
+
+.about_wrap-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.teachers_card {
+  width: 350px;
+  padding: 15px;
+  background-color: aliceblue;
+  color: black;
+  box-shadow: 1px 2px 20px 5px #d7d7d7;
+}
+
+.teachers__name {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.teachers__job {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.teachers_wrapper {
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.teachers__img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.facts__item{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.inventory__item:hover {
+  transform: scale(1.03);
+}
+.inventory__item {
+  transition: box-shadow 0.3s;
+  box-shadow: 0 8px 16px 0
+ rgba(0,0,0,0.2);
+ width: 300px;
+ }
+ .inventory__img {
+  transition: outline 0.3s;
+  outline: 2px solid #f79a0f;
+ }
+ .inventory__item{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+ }
+ /* ставятся столбы колонны */
+ .facts__item {
+  padding: 15px;
+  background-color: aliceblue;
+  color: black;
+  box-shadow: 1px 2px 20px 5px #d7d7d7;
+}
+
+.facts__heading {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.facts__text {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.facts__img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.facts__list{
+  display: flex;
+  justify-content: space-between;
+}
+/* растояние и ширина между ними */
+.facts__item{
+  width: 350px;
+}
