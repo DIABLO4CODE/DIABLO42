@@ -10,7 +10,7 @@
 
 .about {
   background-color: rgb(255, 165, 47);
-  color: rgb(255, 255, 255);
+  color: rgb(10, 10, 10);
   padding: 10px;
 }
 
@@ -27,6 +27,11 @@
 .about_wrap-left {
   display: flex;
   flex-direction: column;
+}
+
+.teachers_title{
+ text-align: center;
+ background-color: #f79a0f;
 }
 
 .teachers_card {
@@ -66,12 +71,58 @@
   height: 300px;
   object-fit: cover;
 }
+.trial{
+  position: relative;
+  z-index: 0;
+}
+.trial__shadow{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  z-index: 1;
+}
+.trial__info{
+  background-image:url(../image/targetfortrial.jpg);
+  box-shadow: 1px 2px 20px 5px #1f1e1e;
+  background-size: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+}
+
+
+.trial__info{
+  padding-top: 90px;
+  color: aliceblue;
+  text-align: center;
+}
+
+.trial__textinfo{
+  position: relative;
+  z-index: 10;
+}
+
+.facts__title{
+  text-align: center;
+  background-color: #f79a0f;
+}
 .facts__item{
   margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+}
+
+.facts__img {
+  transition: outline 0.3s;
+  outline: 2px solid #f79a0f;
+ }
+
+ .inventory__title{
+  text-align: center;
+  background-color: #f79a0f;
 }
 .inventory__item:hover {
   transform: scale(1.03);
@@ -128,4 +179,26 @@
 /* растояние и ширина между ними */
 .facts__item{
   width: 350px;
+}
+
+.inventory__item {
+  padding: 15px;
+  background-color: aliceblue;
+  color: black;
+  box-shadow: 1px 2px 20px 5px #d7d7d7;
+}
+
+.inventory__list{
+  display: flex;
+ justify-content: center;
+ gap: 200px;
+}
+
+.inventory__item{
+  width: 350px;
+}
+
+.footer__question{
+  text-align: center;
+  background-color: #f79a0f;
 }
