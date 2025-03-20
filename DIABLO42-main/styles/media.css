@@ -1,0 +1,25 @@
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .teachers_card {
+        width: 250px;
+    }
+   
+    .facts__list {
+        gap: 20px;
+    }
+    
+    .facts__item {
+        width: 300px;
+    }
+
+    .inventory__list{
+        gap: 100px;
+    }
+}

@@ -1,0 +1,46 @@
+.menu{
+    font-family: 'SFUIDisplay';
+    font-weight: 900;
+}
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu_link{
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(244, 164, 96);
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+   }
+   .header__button{
+    display: inline-block;
+     padding: 10px;
+     margin: 5px;
+     background-color: rgb(244, 164, 96);
+     color: rgb(10, 10, 10);
+     text-decoration: none;
+    }
+   .header__logo-wrap{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   }
+   .header__logo-wrap{
+    text-decoration: none;
+    color: rgb(11, 126, 82);
+   }
+   .header__title{
+    margin: 0;
+   }
+   .header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   }
+   
