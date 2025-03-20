@@ -68,7 +68,7 @@
             </div>
             <div class="teachers_card">
                 <img class="teachers__img" src="image/images (1).png" alt="photo teacher" width="150" height="150">
-                <p class="teachers__name">галина сергеевна</p>
+                <p class="teachers__name">Бариев Фаиль Нурфисович</p>
                 <p class="teachers__job">должность</p>
             </div>
             </div>
@@ -142,17 +142,18 @@
     <footer class="footer container">
         <section class="footer__info">
             <h2 class="footer__question">Есть вопросы? Задавайте!</h2>
-            <form action="/" method="post">
-                <input type="text" placeholder="Введите Имя пользователя">
+            <form class="footer__form" action="/" method="post">
+                
+                <input  class="footer__input" type="text" placeholder="Введите Имя пользователя">
 
-                <input type="tel" id="tel" name="tel" placeholder="Введите номер телефона">
+                <input class="footer__input" type="tel" id="tel" name="tel" placeholder="Введите номер телефона">
 
-                <input type="email" id="email" name="email" placeholder="Введите ваш email">
+                <input class="footer__input" type="email" id="email" name="email" placeholder="Введите ваш email">
 
-                <textarea id="message" name="message" rows="5" cols="30"
-                    placeholder="Введите ваше сообщение"></textarea>
-
-                <input type="submit" value="Отправить">
+                <textarea class="message__input" type="message" id="message" name="message" rows="5" cols="30"
+                    placeholder="Введите ваше сообщение">
+                </textarea>
+                <input class="footer__button" type="submit" value="Отправить">
             </form>
         </section>
     </footer>
