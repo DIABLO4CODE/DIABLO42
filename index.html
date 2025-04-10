@@ -26,19 +26,19 @@
                     <a class="menu_link" href="#">Расписание</a>
                 </li>
                 <li class="menu_item">
-                    <a class="menu_link" href="#">Преподователи</a>
+                    <a class="menu_link" href="#teachers">Преподователи</a>
                 </li>
                 <li class="menu_item">
                     <a class="menu_link" href="#">Личный кабинет</a>
                 </li>
                 <li class="menu_item">
-                    <a class="menu_link" href="#">Пробное занятие</a>
+                    <a class="menu_link" href="#trial">Пробное занятие</a>
                 </li>
             </ul>
         </nav>
         <div class="header__buttons">
-            <a class="header__button" href="#">Вход</a>
-            <a class="header__button" href="#">Регистрация</a>
+            <a class="header__button header__button-enter" href="#">Вход</a>
+            <a class="header__button header__button-register" href="#">Регистрация</a>
             </div>
     </header>
     <main class="main container">
@@ -53,7 +53,7 @@
             <img class="aobut_image" src="image/Сонар видспорта.jpg" alt="sport" width="600" height="400">
         </div>
         </section>
-        <section class="teachers_container">
+        <section class="teachers_container" id="teachers">
             <h2 class="teachers_title">Наши преподователи </h2>
             <div class="teachers_wrapper">
                             <div class="teachers_card">
@@ -69,12 +69,12 @@
             <div class="teachers_card">
                 <img class="teachers__img" src="image/images (1).png" alt="photo teacher" width="150" height="150">
                 <p class="teachers__name">Бариев Фаиль Нурфисович</p>
-                <p class="teachers__job">должность</p>
+                <p class="teachers__job">Помощник преподавателя</p>
             </div>
             </div>
 
         </section>
-        <section class="trial">
+        <section class="trial" id="trial">
             <div class="trial__shadow">
             </div>
             <div class="trial__info">
@@ -127,11 +127,13 @@
                     <ul class="inventory__list">
                         <li class="inventory__item">
                             <img class="inventory__img" src="image/лук в разборе.webp" alt="bow" width="300" height="300">
-                            <p class="inventory__text">текст о луке</p>
+                            <p class="inventory__text">Лук традиционный - это классический вид лука: чтобы стрелять из него, не нужны дополнительные приспособления. 
+                                Этот лук создан вдохновляясь английским луком, он довольно длинный и обычно сделан из дерева. Английские длинные луки обеспечивали преимущество Англии в континентальной столетней войне.</p>
                         </li>
                         <li class="inventory__item">
                             <img class="inventory__img" src="image/стрела в разборе.jpg" alt="arrow" width="300" height="300">
-                            <p class="inventory__text">текст о стреле</p>
+                            <p class="inventory__text">Стрела состоит из 4х основных компонентов: Наконечник: Это передняя часть стрелы, то есть часть, которая поражает цель.
+                                 Древко: Корпус стрелы, соединяющий наконечник с хвостовиком и оперением. Оперение: Обычно 3 перьевые или пластиковые лопасти в задней части стрелы для стабилизации в полете.</p>
                         </li>
                     </ul>
                 </div>
@@ -157,6 +159,7 @@
             </form>
         </section>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
