@@ -179,6 +179,22 @@
 /* растояние и ширина между ними */
 .facts__item{
   width: 350px;
+  height: 700px;
+  /* position: relative; */
+}
+.facts__description {
+  margin-top: 15px;
+  color: #4a4a4a;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+
+  width: 350px;
+  background-color: #f79d9d;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%); */
 }
 
 .inventory__item {
@@ -201,4 +217,47 @@
 .footer__question{
   text-align: center;
   background-color: #f79a0f;
+}
+.applications {
+  position: fixed; /* позицинорование фиксированное */
+  top: 0; /* Элемент будет находиться на верхней границе экрана*/
+  left: 0; /* Элемент будет находиться на левой границе экрана.*/
+  width: 100%;/* Ширина 100% от окна браузера */
+  height: 100%;/* Высота 100% от окна браузера */
+  background-color: rgba(58, 60, 65, 0.7); /*задаем фон Полупрозрачный с цветом */
+}
+.application {
+  position: absolute; /* позиционируется абсолютно*/
+  top: 50%; /* верхняя часть смещена на 50% высоты родителя*/
+  left: 50%;/*левая граница смещена на 50% ширины родителя*/
+  transform: translate(-50%, -50%);/* смещаем элемент относительно его текущего положения*/
+  max-width: 800px;/* Максимальная ширина окна */
+  width: 100%;/* Ширина 100% от родительского элемента */
+  padding: 50px 20px; /* Внутренние отступы: 50px сверху и снизу, 20px слева и справа */
+  display: flex; /*Используем flexbox для выравнивания*/
+  justify-content: center; /* распределяем элементы по центру*/ 
+  align-items: center; /* выравнивание по вертикали */
+  column-gap: 64px; /* отступы между столбцами */
+  background-color: #ff702e; /*фон модального окна*/
+  color: #fff; /*цвет текста*/
+}
+.application__title {
+  font-size: 36px; /*размер шрифта для заголовков*/
+}
+.application__text {
+  margin-top: 20px; /* Отступ сверху */
+  font-size: 20px; /*размер шрифта для текста*/
+}
+.application__form {
+  width: 500px; /*устанавливаем ширину для формы*/
+  display: flex; /*Используем flexbox для выравнивания формы в строку*/
+  flex-direction: column;
+  row-gap: 10px; /* отступы между строками */
+}
+.application__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #eec0ac;
 }
