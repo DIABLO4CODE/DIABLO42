@@ -50,3 +50,66 @@ document.addEventListener("DOMContentLoaded", () => {
            });
     }
 });
+//3.5 навигацонное меню
+const headerMenu = document.querySelector('.header_menu');
+if (headerMenu){
+    const headerList = headerMenu.querySelector('.menu');
+    const menuData = {
+        link1: {
+            link: 'index.html',
+            title: 'Главная',
+        },
+        link2: {
+            link: '#',
+            title: 'Расписание',
+        },
+        link3: {
+            link: '#teachers',
+            title: 'Преподователи',
+        },
+        link4: {
+            link: '#',
+            title: 'Личный кабинет',
+        },
+        link5: {
+            link: '#trial',
+            title: 'Пробное занятие',
+        }
+    }
+    const createLink = (UrlLink, title) =>{
+        const link = `
+        <li class="menu_item">
+        <a href="${UrlLink}" class="menu_link">${title}</a></li>
+        `
+        return link;
+    }
+    for (const linkItem in menuData) {
+        const link = menuData[linkItem];
+        const linkIndex = createLink(link.UrlLink, link.title);
+        headerList.insertAdjacentHTML('beforeend', linkIndex);
+        console.log('навигационное меню создано с помощью Javascript!')
+
+    }
+}
+//3.6 json вариант 2
+const cardsCon = document.querySelector(".teachers_container");
+if (cardsCon) {
+    const cardList = cardsCon.querySelector(".teachers_wrapper");
+    const apiUrl = "data.json";
+    const createCard = (
+        imageUrl,
+            iconAlt,
+            iconWidth,
+            iconHeight,
+            title,
+            description
+    ) => {
+        const card = `
+        <li class="" href="#teachers">
+                      <img class="" src="${imageUrl}" alt="${iconAlt}" width="${iconWidth}" height="${iconHeight}">
+                    <h3 class="">${title}</h3>
+                    <p class="">${description}</p>
+                </li>`
+
+    }
+}

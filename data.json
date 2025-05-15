@@ -1,0 +1,27 @@
+[
+    {
+        "image": "image/images (1).png",
+        "iconAlt":"photo teacher" ,
+        "iconWidth":150,
+        "iconHeight":150,
+        "title": "Мулярчик Наталья Николаевна",
+        "description":"старший преподаватель"
+
+    },
+    {
+        "image": "image/images (1).png",
+        "iconAlt":"photo teacher" ,
+        "iconWidth":150,
+        "iconHeight":150,
+        "title":"Николаев Роман Игоревич",
+        "description": "преподаватель"
+    },
+    {
+        "image": "image/images (1).png",
+        "iconAlt":"photo teacher" ,
+        "iconWidth":150,
+        "iconHeight":150,
+        "title":"Бариев Фаиль Нурфисович",
+        "description":"Помощник преподавателя"
+    }
+]
