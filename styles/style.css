@@ -11,3 +11,4 @@
 /* Подключение стилей для главной страницы */
 @import "index.css";
 @import "media.css";
+@import "preloader.css";
