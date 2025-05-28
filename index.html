@@ -8,6 +8,7 @@
     <title>Спортивная секция Сонар</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -20,15 +21,15 @@
         Загрузка...
     </div>
     <div class="content">
-    <header class="header container"> 
-        <a class="header__logo-wrap" href="index.html"><img class="header__logo" src="image/лук лого.jpg" alt="logotip"
-                width="90" height="90">
-        <h1 class="header_title">Секция Сонар </h1>
-        </a>
-        <nav class="header_menu">
-            <ul class="menu">
-                <!-- вкладки перехода по сайту -->
-                <!-- <li class="menu_item menu_item--active">
+        <header class="header container">
+            <a class="header__logo-wrap" href="index.html"><img class="header__logo" src="image/лук лого.jpg"
+                    alt="logotip" width="90" height="90">
+                <h1 class="header_title">Секция Сонар </h1>
+            </a>
+            <nav class="header_menu">
+                <ul class="menu">
+                    <!-- вкладки перехода по сайту -->
+                    <!-- <li class="menu_item menu_item--active">
                     <a class="menu_link" href="index.html">Главная</a>
                 </li>
                 <li class="menu_item">
@@ -43,29 +44,31 @@
                 <li class="menu_item">
                     <a class="menu_link" href="#trial">Пробное занятие</a>
                 </li> -->
-            </ul>
-        </nav>
-        <div class="header__buttons">
-            <a class="header__button header__button-enter" href="#">Вход</a>
-            <a class="header__button header__button-register" href="#">Регистрация</a>
+                </ul>
+            </nav>
+            <div class="header__buttons">
+                <a class="header__button header__button-enter" href="#">Вход</a>
+                <a class="header__button header__button-register" href="#">Регистрация</a>
             </div>
-    </header>
-    <main class="main container">
-        <section class="about">
-            <div class="about_warp-left">
-            <h2 class="about_title"> О нас</h2>
-            <p>Сонар-национальный вид спорта. Тренировки проходят на свежем воздухе. С марийского языка «сонар» переводится, как  «охота». Спортсменам нужно пробежать 200 метров, после чего трижды выстрелить из лука.За каждое непопадание – силовая часть - полоса препятствий.
-            </p>
-            <a class="about_button" href="#">Записаться на консультацию</a>
-        </div>
-        <div class="about_warp-right">
-            <img class="aobut_image" src="image/Сонар видспорта.jpg" alt="sport" width="600" height="400">
-        </div>
-        </section>
-        <section class="teachers_container" id="teachers">
-            <h2 class="teachers_title">Наши преподователи </h2>
-            <div class="teachers_wrapper">
-                            <!-- <div class="teachers_card">
+        </header>
+        <main class="main container">
+            <section class="about">
+                <div class="about_warp-left">
+                    <h2 class="about_title"> О нас</h2>
+                    <p>Сонар-национальный вид спорта. Тренировки проходят на свежем воздухе. С марийского языка «сонар»
+                        переводится, как «охота». Спортсменам нужно пробежать 200 метров, после чего трижды выстрелить
+                        из лука.За каждое непопадание – силовая часть - полоса препятствий.
+                    </p>
+                    <a class="about_button" href="#">Записаться на консультацию</a>
+                </div>
+                <div class="about_warp-right">
+                    <img class="aobut_image" src="image/Сонар видспорта.jpg" alt="sport" width="600" height="400">
+                </div>
+            </section>
+            <section class="teachers_container" id="teachers">
+                <h2 class="teachers_title">Наши преподователи </h2>
+                <div class="teachers_wrapper">
+                    <!-- <div class="teachers_card">
                 <img class="teachers__img" src="image/images (1).png" alt="photo teacher" width="150" height="150">
                 <p class="teachers__name">Тренер 1</p>
                 <p class="teachers__job">старший преподаватель</p>
@@ -80,119 +83,163 @@
                 <p class="teachers__name">Тренер 3</p>
                 <p class="teachers__job">Помощник преподавателя</p>
             </div> -->
-            </div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="teachers_card">
+                                    <img class="teachers__img" src="image/images (1).png" alt="photo teacher"
+                                        width="150" height="150">
+                                    <p class="teachers__name">Тренер 1</p>
+                                    <p class="teachers__job">старший преподаватель</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="teachers_card">
+                                    <img class="teachers__img" src="image/images (1).png" alt="photo teacher"
+                                        width="150" height="150">
+                                    <p class="teachers__name">Тренер 2</p>
+                                    <p class="teachers__job">преподаватель</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="teachers_card">
+                                    <img class="teachers__img" src="image/images (1).png" alt="photo teacher"
+                                        width="150" height="150">
+                                    <p class="teachers__name">Тренер 3</p>
+                                    <p class="teachers__job">Помощник преподавателя</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
 
-        </section>
-        <section class="trial" id="trial">
-            <div class="trial__shadow">
-            </div>
-            <div class="trial__info">
-                <div class=" trial__textinfo">
-                <h2 class="trial__title">Секция Сонар</h2>
-                <p class="trial__text">Попробуйте пробное занятие сейчас!</p>
-                <button class="trial__button" type="button">Записаться</button>
-            </div>
-            </div>
-        </section>
-        <section class="facts">
-            <h2 class="facts__title">Чем полезна секция?</h2>
-            <div class="facts__info">
-                <ul class="facts__list">
-                    <li class="facts__item">
-                        <img class="facts__img" src="image/прицл.webp" alt="concentration" width="300" height="300">
-                        <div class="facts__description" hidden>
-                        <h3 class="facts__heading">
-                            Концентрация и ментальное благополучие.
-                        </h3>
-                        <p class="facts__text">
-                            Чтобы достичь точности при стрельбе из лука, необходимо обладать хорошей концентрацией и
-                            ментальным спокойствием.
-                        </p>
+            </section>
+            <section class="trial" id="trial">
+                <div class="trial__shadow">
+                </div>
+                <div class="trial__info">
+                    <div class=" trial__textinfo">
+                        <h2 class="trial__title">Секция Сонар</h2>
+                        <p class="trial__text">Попробуйте пробное занятие сейчас!</p>
+                        <button class="trial__button" type="button">Записаться</button>
                     </div>
-                    </li>
-                    <li class="facts__item">
-                        <img class="facts__img" src="image/istockphoto-1093596430-612x612.jpg" alt="bow picture"
-                            width="300" height="300">
+                </div>
+            </section>
+            <section class="facts">
+                <h2 class="facts__title">Чем полезна секция?</h2>
+                <div class="facts__info">
+                    <ul class="facts__list">
+                        <li class="facts__item">
+                            <img class="facts__img" src="image/прицл.webp" alt="concentration" width="300" height="300">
                             <div class="facts__description" hidden>
-                        <h3 class="facts__heading">
-                            благотворно влияет на состояние здоровья
-                        </h3>
-                        <p class="facts__text">
-                            стрельба из лука благотворно влияет на осанку и улучшает зрение
-                        </p>
-                    </div>
-                    </li>
-                    <li class="facts__item">
-                        <img class="facts__img" src="image/бегущий человек.jpg" alt="running man" >
-                        <div class="facts__description" hidden>
-                        <h3 class="facts__heading">
-                            Повышение работоспособности.
-                        </h3>
-                        <p class="facts__text">
-                            После тренировок повышается работоспособность, организм дополнительно вырабатывает гормоны
-                            эндорфины, серотонин и дофамин, которые повышают настроение и мотивированность.
-                        </p>
-                    </div> 
-                    </li>
-                </ul>
-            </div>
-            <section class="inventory">
-                    <h2 class="inventory__title">Инвентарь</h2>
-                <div class="inventory__info">
-                    <ul class="inventory__list">
-                        <li class="inventory__item">
-                            <img class="inventory__img" src="image/лук в разборе.webp" alt="bow" width="300" height="300">
-                            <p class="inventory__text">Лук традиционный - это классический вид лука: чтобы стрелять из него, не нужны дополнительные приспособления. 
-                                Этот лук создан вдохновляясь английским луком, он довольно длинный и обычно сделан из дерева. Английские длинные луки обеспечивали преимущество Англии в континентальной столетней войне.</p>
+                                <h3 class="facts__heading">
+                                    Концентрация и ментальное благополучие.
+                                </h3>
+                                <p class="facts__text">
+                                    Чтобы достичь точности при стрельбе из лука, необходимо обладать хорошей
+                                    концентрацией и
+                                    ментальным спокойствием.
+                                </p>
+                            </div>
                         </li>
-                        <li class="inventory__item">
-                            <img class="inventory__img" src="image/стрела в разборе.jpg" alt="arrow" width="300" height="300">
-                            <p class="inventory__text">Стрела состоит из 4х основных компонентов: Наконечник: Это передняя часть стрелы, то есть часть, которая поражает цель.
-                                 Древко: Корпус стрелы, соединяющий наконечник с хвостовиком и оперением. Оперение: Обычно 3 перьевые или пластиковые лопасти в задней части стрелы для стабилизации в полете.</p>
+                        <li class="facts__item">
+                            <img class="facts__img" src="image/istockphoto-1093596430-612x612.jpg" alt="bow picture"
+                                width="300" height="300">
+                            <div class="facts__description" hidden>
+                                <h3 class="facts__heading">
+                                    благотворно влияет на состояние здоровья
+                                </h3>
+                                <p class="facts__text">
+                                    стрельба из лука благотворно влияет на осанку и улучшает зрение
+                                </p>
+                            </div>
+                        </li>
+                        <li class="facts__item">
+                            <img class="facts__img" src="image/бегущий человек.jpg" alt="running man">
+                            <div class="facts__description" hidden>
+                                <h3 class="facts__heading">
+                                    Повышение работоспособности.
+                                </h3>
+                                <p class="facts__text">
+                                    После тренировок повышается работоспособность, организм дополнительно вырабатывает
+                                    гормоны
+                                    эндорфины, серотонин и дофамин, которые повышают настроение и мотивированность.
+                                </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
+                <section class="inventory">
+                    <h2 class="inventory__title">Инвентарь</h2>
+                    <div class="inventory__info">
+                        <ul class="inventory__list">
+                            <li class="inventory__item">
+                                <img class="inventory__img" src="image/лук в разборе.webp" alt="bow" width="300"
+                                    height="300">
+                                <p class="inventory__text">Лук традиционный - это классический вид лука: чтобы стрелять
+                                    из него, не нужны дополнительные приспособления.
+                                    Этот лук создан вдохновляясь английским луком, он довольно длинный и обычно сделан
+                                    из дерева. Английские длинные луки обеспечивали преимущество Англии в
+                                    континентальной столетней войне.</p>
+                            </li>
+                            <li class="inventory__item">
+                                <img class="inventory__img" src="image/стрела в разборе.jpg" alt="arrow" width="300"
+                                    height="300">
+                                <p class="inventory__text">Стрела состоит из 4х основных компонентов: Наконечник: Это
+                                    передняя часть стрелы, то есть часть, которая поражает цель.
+                                    Древко: Корпус стрелы, соединяющий наконечник с хвостовиком и оперением. Оперение:
+                                    Обычно 3 перьевые или пластиковые лопасти в задней части стрелы для стабилизации в
+                                    полете.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
             </section>
-        </section>
-    </main>
-    
-    <footer class="footer container">
-        <section class="footer__info">
-            <h2 class="footer__question">Есть вопросы? Задавайте!</h2>
-            <form class="footer__form" action="/" method="post">
-                
-                <input  class="footer__input" type="text" placeholder="Введите Имя пользователя">
+        </main>
 
-                <input class="footer__input" type="tel" id="tel" name="tel" placeholder="Введите номер телефона">
+        <footer class="footer container">
+            <section class="footer__info">
+                <h2 class="footer__question">Есть вопросы? Задавайте!</h2>
+                <form class="footer__form" action="/" method="post">
 
-                <input class="footer__input" type="email" id="email" name="email" placeholder="Введите ваш email">
+                    <input class="footer__input" type="text" placeholder="Введите Имя пользователя">
 
-                <textarea class="message__input" type="message" id="message" name="message" rows="5" cols="30"
-                    placeholder="Введите ваше сообщение">
+                    <input class="footer__input" type="tel" id="tel" name="tel" placeholder="Введите номер телефона">
+
+                    <input class="footer__input" type="email" id="email" name="email" placeholder="Введите ваш email">
+
+                    <textarea class="message__input" type="message" id="message" name="message" rows="5" cols="30"
+                        placeholder="Введите ваше сообщение">
                 </textarea>
-                <input class="footer__button" type="submit" value="Отправить">
-            </form>
-        </section>
-    </footer>
-    <div class="applications" hidden>
-        <section class="application">
-            <div class="applications__wrap">
-                <h3 class="applications__title">
-                    Запишитесь на пробное занятие сейчас!
-                </h3>
-            </div>
-            <div>
-                <button class="application__close" type="button">Закрыть</button>
-            <form action="/" class="application__form">
-                <input class="application__input" type="text" placeholder="Имя">
-                <input class="application__input" type="tel" placeholder="Телефон">
-                <input class="application__input" type="email" placeholder="E-mail">
-                <button class="application__button button">Отправить заявку</button>
-            </form>
+                    <input class="footer__button" type="submit" value="Отправить">
+                </form>
+            </section>
+        </footer>
+        <div class="applications" hidden>
+            <section class="application">
+                <div class="applications__wrap">
+                    <h3 class="applications__title">
+                        Запишитесь на пробное занятие сейчас!
+                    </h3>
+                </div>
+                <div>
+                    <button class="application__close" type="button">Закрыть</button>
+                    <form action="/" class="application__form" id="formApplication">
+                        <input class="application__input" type="text" id="username" placeholder="Имя">
+                        <input class="application__input" type="tel" id="tel" placeholder="Телефон">
+                        <input class="application__input" type="email" id="email" placeholder="E-mail">
+                        <button class="application__button button" type="submit">Отправить заявку</button>
+
+                        <p id="application__message" class="application__message"></p>
+                    </form>
+                </div>
+            </section>
         </div>
-        </section>
     </div>
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

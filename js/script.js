@@ -146,3 +146,59 @@ if (preloader && content) {
         preloader.remove();
     }, 3000);
 }
+//3.7 часть 1
+const slider = document.querySelector('.swiper');
+if (slider) {
+    const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+    });
+}
+//3.7 часть 2
+const formApplication = document.querySelector("#formApplication"); 
+// Проверяем, существует ли элемент formApplication
+if (formApplication) {  
+    // Добавляем обработчик события для отправки формы
+   formApplication.addEventListener("submit", (event) => {
+     event.preventDefault(); // Предотвращаем отправку формы
+    // Объявляем переменные "username", "tel","email",   и помещаем в нее элементы с id из формы
+     const username = formApplication.querySelector("#username").value;
+     const tel = formApplication.querySelector("#tel").value;
+     const email = formApplication.querySelector("#email").value;
+
+     // Объявляем переменную modalMessage и помещаем в нее элемент для отображения сообщений о статусе заявки
+     const modalMessage = formApplication.querySelector("#application__message");
+    
+      // Проверка длины имени пользователя
+      if (username.length < 3) {
+         modalMessage.textContent = "Имя пользователя должно содержать не менее 3 символов";
+         modalMessage.style.color = "black"; // Устанавливаем цвет сообщения об ошибке
+         return;
+      }
+    
+       // Проверка номера телефона
+      if (!/^\d{10,}$/.test(tel)) {
+          modalMessage.textContent = "Номер телефона должен содержать только цифры и быть не менее 10 символов";
+          modalMessage.style.color = "black"; // Устанавливаем цвет сообщения
+          return;
+      }
+    
+      // Здесь можно добавить отправку данных на сервер
+      modalMessage.textContent = "Заявка отправлена!";
+      modalMessage.style.color = "green"; // Устанавливаем цвет сообщения для успешной отправки
+    
+      // Записываем данные в localStorage
+      window.localStorage.setItem("username", username);
+      window.localStorage.setItem("tel", tel);
+      window.localStorage.setItem("email", email);
+});
+}
